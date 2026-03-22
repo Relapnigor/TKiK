@@ -15,5 +15,5 @@ Skaner pobiera kod z pliku code.txt. Na jego podstawie generuje plik output.html
 | OPERATOR  | +, -, *, /, =, !, <, >                      | #546E7A |
 | PAREN     | (, ), {, }, [, ]                             | #FF00FF |
 | COMMENT   | Komentarze po #                              | #0DA000 |
-| SPACE     | Spacje                                      | BRAK  |
-| NEWLINE   | Nowe linie                                  | BRAK  |
+| SPACE     | Spacje                                      | -  |
+| NEWLINE   | Nowe linie                                  | -  |
