@@ -1,0 +1,42 @@
+<html><body style="background-color: #252525; font-size: 20px;"><pre><span style="color: #C792EA;">func</span> <span style="color: #F5F100;">add</span><span style="color: #FF00FF;">(</span><span style="color: #FFCB6B;">float</span> <span style="color: #53FCE5;">a,</span> <span style="color: #FFCB6B;">float</span> <span style="color: #53FCE5;">b</span><span style="color: #FF00FF;">)</span> <span style="color: #546E7A;">-</span><span style="color: #546E7A;">></span> <span style="color: #FFCB6B;">float</span> <span style="color: #FF00FF;">{</span> <span style="color: #0DA000;"># Dodawanie</span>
+    <span style="color: #C792EA;">return</span> <span style="color: #53FCE5;">a</span> <span style="color: #546E7A;">+</span> <span style="color: #53FCE5;">b</span>
+<span style="color: #FF00FF;">}</span>
+
+<span style="color: #C792EA;">func</span> <span style="color: #F5F100;">subtract</span><span style="color: #FF00FF;">(</span><span style="color: #FFCB6B;">float</span> <span style="color: #53FCE5;">a,</span> <span style="color: #FFCB6B;">float</span> <span style="color: #53FCE5;">b</span><span style="color: #FF00FF;">)</span> <span style="color: #546E7A;">-</span><span style="color: #546E7A;">></span> <span style="color: #FFCB6B;">float</span> <span style="color: #FF00FF;">{</span> <span style="color: #0DA000;"># Odejmowanie</span>
+    <span style="color: #C792EA;">return</span> <span style="color: #53FCE5;">a</span> <span style="color: #546E7A;">-</span> <span style="color: #53FCE5;">b</span>
+<span style="color: #FF00FF;">}</span>
+
+<span style="color: #C792EA;">func</span> <span style="color: #F5F100;">multiply</span><span style="color: #FF00FF;">(</span><span style="color: #FFCB6B;">float</span> <span style="color: #53FCE5;">a,</span> <span style="color: #FFCB6B;">float</span> <span style="color: #53FCE5;">b</span><span style="color: #FF00FF;">)</span> <span style="color: #546E7A;">-</span><span style="color: #546E7A;">></span> <span style="color: #FFCB6B;">float</span> <span style="color: #FF00FF;">{</span> <span style="color: #0DA000;"># Mnożenie</span>
+    <span style="color: #C792EA;">return</span> <span style="color: #53FCE5;">a</span> <span style="color: #546E7A;">*</span> <span style="color: #53FCE5;">b</span>
+<span style="color: #FF00FF;">}</span>
+
+<span style="color: #C792EA;">func</span> <span style="color: #F5F100;">divide</span><span style="color: #FF00FF;">(</span><span style="color: #FFCB6B;">float</span> <span style="color: #53FCE5;">a,</span> <span style="color: #FFCB6B;">float</span> <span style="color: #53FCE5;">b</span><span style="color: #FF00FF;">)</span> <span style="color: #546E7A;">-</span><span style="color: #546E7A;">></span> <span style="color: #FFCB6B;">float</span> <span style="color: #FF00FF;">{</span> <span style="color: #0DA000;"># Dzielenie</span>
+    <span style="color: #C792EA;">if</span> <span style="color: #53FCE5;">b</span> <span style="color: #546E7A;">!</span><span style="color: #546E7A;">=</span> <span style="color: #F78C6C;">0</span> <span style="color: #FF00FF;">{</span>
+        <span style="color: #C792EA;">return</span> <span style="color: #53FCE5;">a</span> <span style="color: #546E7A;">/</span> <span style="color: #53FCE5;">b</span>
+    <span style="color: #FF00FF;">}</span> <span style="color: #C792EA;">else</span> <span style="color: #FF00FF;">{</span>
+        <span style="color: #C792EA;">return</span> <span style="color: #F78C6C;">0</span>
+    <span style="color: #FF00FF;">}</span>
+<span style="color: #FF00FF;">}</span>
+
+<span style="color: #0DA000;"># Test</span>
+
+<span style="color: #FFCB6B;">float</span> <span style="color: #53FCE5;">x</span> <span style="color: #546E7A;">=</span> <span style="color: #F78C6C;">10</span>
+<span style="color: #FFCB6B;">float</span> <span style="color: #53FCE5;">y</span> <span style="color: #546E7A;">=</span> <span style="color: #F78C6C;">5</span>
+<span style="color: #FFCB6B;">float</span> <span style="color: #53FCE5;">z</span> <span style="color: #546E7A;">=</span> <span style="color: #F78C6C;">0</span>
+
+<span style="color: #53FCE5;">z</span> <span style="color: #546E7A;">=</span> <span style="color: #F5F100;">add</span><span style="color: #FF00FF;">(</span><span style="color: #53FCE5;">x,</span> <span style="color: #53FCE5;">y</span><span style="color: #FF00FF;">)</span>
+<span style="color: #53FCE5;">z</span> <span style="color: #546E7A;">=</span> <span style="color: #F5F100;">subtract</span><span style="color: #FF00FF;">(</span><span style="color: #53FCE5;">z,</span> <span style="color: #F78C6C;">3</span><span style="color: #FF00FF;">)</span>
+<span style="color: #53FCE5;">z</span> <span style="color: #546E7A;">=</span> <span style="color: #F5F100;">multiply</span><span style="color: #FF00FF;">(</span><span style="color: #53FCE5;">z,</span> <span style="color: #F78C6C;">2</span><span style="color: #FF00FF;">)</span>
+<span style="color: #53FCE5;">z</span> <span style="color: #546E7A;">=</span> <span style="color: #F5F100;">divide</span><span style="color: #FF00FF;">(</span><span style="color: #53FCE5;">z,</span> <span style="color: #F78C6C;">4</span><span style="color: #FF00FF;">)</span>
+
+<span style="color: #C792EA;">if</span><span style="color: #F5F100;"> </span><span style="color: #FF00FF;">(</span><span style="color: #53FCE5;">z</span> <span style="color: #546E7A;">></span> <span style="color: #F78C6C;">5</span><span style="color: #FF00FF;">)</span> <span style="color: #FF00FF;">{</span>
+    <span style="color: #53FCE5;">z</span> <span style="color: #546E7A;">=</span> <span style="color: #53FCE5;">z</span> <span style="color: #546E7A;">+</span> <span style="color: #F78C6C;">1</span>
+<span style="color: #FF00FF;">}</span> <span style="color: #C792EA;">else</span> <span style="color: #FF00FF;">{</span>
+    <span style="color: #53FCE5;">z</span> <span style="color: #546E7A;">=</span> <span style="color: #53FCE5;">z</span> <span style="color: #546E7A;">-</span> <span style="color: #F78C6C;">1</span>
+<span style="color: #FF00FF;">}</span>
+
+<span style="color: #FFCB6B;">int</span> <span style="color: #53FCE5;">counter</span> <span style="color: #546E7A;">=</span> <span style="color: #F78C6C;">0</span>
+<span style="color: #C792EA;">while</span><span style="color: #F5F100;"> </span><span style="color: #FF00FF;">(</span><span style="color: #53FCE5;">counter</span> <span style="color: #546E7A;"><</span> <span style="color: #F78C6C;">3</span><span style="color: #FF00FF;">)</span> <span style="color: #FF00FF;">{</span>
+    <span style="color: #53FCE5;">z</span> <span style="color: #546E7A;">=</span> <span style="color: #53FCE5;">z</span> <span style="color: #546E7A;">+</span> <span style="color: #53FCE5;">counter</span>
+    <span style="color: #53FCE5;">counter</span> <span style="color: #546E7A;">=</span> <span style="color: #53FCE5;">counter</span> <span style="color: #546E7A;">+</span> <span style="color: #F78C6C;">1</span>
+<span style="color: #FF00FF;">}</span></pre></body></html>

@@ -1,0 +1,42 @@
+func add(float a, float b) -> float { # Dodawanie
+    return a + b
+}
+
+func subtract(float a, float b) -> float { # Odejmowanie
+    return a - b
+}
+
+func multiply(float a, float b) -> float { # Mnożenie
+    return a * b
+}
+
+func divide(float a, float b) -> float { # Dzielenie
+    if b != 0 {
+        return a / b
+    } else {
+        return 0
+    }
+}
+
+# Test
+
+float x = 10
+float y = 5
+float z = 0
+
+z = add(x, y)
+z = subtract(z, 3)
+z = multiply(z, 2)
+z = divide(z, 4)
+
+if (z > 5) {
+    z = z + 1
+} else {
+    z = z - 1
+}
+
+int counter = 0
+while (counter < 3) {
+    z = z + counter
+    counter = counter + 1
+}
